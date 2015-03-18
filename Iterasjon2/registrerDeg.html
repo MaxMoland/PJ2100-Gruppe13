@@ -1,0 +1,240 @@
+<html>
+<head>
+	<title> Registrer deg </title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+	body {
+	margin:-3;
+	padding:0;
+	height:99%;
+}
+#wrapper {
+	min-height:25%;
+	position:relative;
+}
+#header {
+	padding:0px;
+	background:#5ac0d7;
+}
+#content {
+	position: fixed;
+	
+	/*padding:0px; */
+	/*padding-bottom:0px;*/   /* Height of the footer element */
+}
+#wfooter {	
+	position: fixed;
+	width: 1923px;
+	bottom: 0px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.boks{
+	width: 300px;
+	height: 650px;
+	float: center;
+	text-align: center;
+	border-radius: 15px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	/* border-style: inset; */
+	background-color: #efefef;
+	box-shadow: 10px 10px 5px #888888;
+}
+.cell
+{
+    width: 120px;
+    height:40px;
+    position: relative;
+    color: transparent;
+    line-height: 0px;
+}
+
+/* Header */
+.headcell
+{
+    width: 100px;
+    height:40px;
+    color: blue;
+    position: relative;
+    line-height: 20px;
+}
+.bottommidh
+{
+    text-align: right;
+}
+.headcell div:before
+{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid; 
+    z-index: -1;
+}
+.topmidh:before
+{ 
+
+    border-width: 240px 1920px 0 0;
+    border-color: #5ac0d7 transparent transparent transparent;
+}
+.bottommidh:before
+{
+    border-width: 0 0 240px 1925px;
+    border-color: transparent transparent #4aa3b7 transparent;
+    top:0px;
+    left:0px;
+}
+
+
+/* Middel */
+.bottommid
+{
+    text-align: right;
+}
+.cell div:before
+{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid; 
+    z-index: -1;
+}
+.topmid:before
+{ 
+	border-right: 1922px #fa6e61;
+	border-bottom: 870px #ff7f70;
+}
+h2.sansserif {
+	position: relative;
+	text-align: center;
+	font-family: Helvetica;
+	top: 5%;
+
+}
+h1.Westerdals {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 400%;
+	left: 40%;
+	top: 20%;	
+}
+h2.info {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 125%;
+	left: 40%;
+	top: 67%;	
+}
+h2.info2 {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 125%;
+	left: 40%;
+	top: 77%;	
+}
+p.tilbakeLogIn {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 110%;
+	top: 99%;
+}
+#actLogo {
+	position: absolute;
+	width: 30%;
+	left: 18%;
+	top: -10%;
+}
+input {
+	border-radius: 10px;
+	padding: 8px 40px;
+
+}
+#submit {
+	background: #64cca7;
+}
+#NyBrukerLogo {
+	position: absolute;
+	top: 14%;
+	left: 40%;
+	height: 38%;
+}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header"></div>	
+		<img src="westerdalsActLogo.png" id="actLogo"> </img>
+				<h1 class="Westerdals"> Westerdals </h1>
+				<h2 class="info"> Oslo school of arts </h2>
+				<h2 class="info2"> Communication and Technology </h2> 		
+			<div class="headcell">
+				<div class="topmidh"></div>
+				<div class="bottommidh"></div>
+			</div>
+	</div>
+		<div id="content"></div>
+			<div class="cell">
+    			<div class="topmid"></div>
+   				<div class="bottommid"></div>
+			</div>
+	<div class="boks">
+		<img src="Ny-Bruker-Logo.png" alt="Ny Bruker Logo" id="NyBrukerLogo"></img>
+    <br></br>
+			<h2 class="sansserif"> Registrer deg </h2>
+			<br></br>
+			<p class="tilbakeLogIn"> Tilbake til Log In </p>
+ 	 <section class="wrap">    
+    <form id="simpleform">
+    	<div>
+    		<label for="forNavn">Fornavn:</label>
+    		<br></br>
+    		<input type="text" name="Navn" id="forNavn"> </input>
+    	</div>
+    	<div>
+    		<label for="etterNavn">Etternavn:</label>
+    		<br></br>
+    		<input type="text" name="etterNavn" id="etterNavn"></input>
+    	</div>
+    	<div>
+    		<label for="brukerNavn">Brukernavn:</label>
+    		<br></br>
+    		<input type="text" name="brukerNavn" id="brukerNavn"></input>
+    	</div> 
+    	<div>
+    		<label for="passord">Passord:</label>
+    		<br></br>
+    		<input type="password" name="passord" id="passord"></input>
+    	</div>    	   	
+    	<div>
+    		<label for="studentNr">Studentnummer:</label>
+    		<br></br>
+    		<input type="text" name="studentNr" id="studentNr"></input>
+    	</div>
+    	<div>
+    		<label for="epost">Epost:</label>
+    		<br></br>
+    		<input type="epost" name="epost" id="epost"></input>
+    	</div>    	
+    	<br></br>
+    	<input type="submit" value="Send" id="submit"> </input>
+    </div>
+    </form>
+  </section>
+		</div>
+		<div id="footer"></div>
+		<img src="footer.png" id="Wfooter"></img>
+	</div>
+</div>
+</body>
+</html>
