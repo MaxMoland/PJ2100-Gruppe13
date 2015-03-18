@@ -1,19 +1,19 @@
 <html>
 <head>
 	<title> Startsiden </title>
-	<meta charset="UTF-8">
-	<style type="text/css">
-	body {
+	   <meta charset="UTF-8">
+	   <style type="text/css">
+body {
 	margin:-3;
 	padding:0;
-	height:99%;
+	height:99%;    
 }
 #wrapper {
 	min-height:25%;
 	position:relative;
 }
 #header {
-	padding:0px;
+	padding:1px;
 	background:#5ac0d7;
 }
 #content {
@@ -56,11 +56,10 @@
 /* Header */
 .headcell
 {
-    width: 100px;
+    width: 500px;
     height:40px;
     color: blue;
-    position: relative;
-    line-height: 20px;
+    position: absolute;
 }
 .bottommidh
 {
@@ -116,6 +115,7 @@ h2.sansserif {
 	text-align: center;
 	font-family: Helvetica;
 	top: 5%;
+    font-size: 35px;    
 
 }
 h1.Westerdals {
@@ -147,6 +147,7 @@ p.glemtpassord {
 	text-align: center;
 	font-family: Helvetica;
 	font-size: 110%;
+    left: 43%;
 	top: 75%;
 }
 p.nybruker {
@@ -176,6 +177,7 @@ input {
 	left: 46.5%;
 	height: 15%;
 }
+           
 	</style>
 </head>
 <body>
@@ -195,22 +197,21 @@ input {
     			<div class="topmid"></div>
    				<div class="bottommid"></div>
 			</div>
-	<div class="boks">
-		<img src="LogginnLogo.png" alt="Logg inn logo" id="LogginnLogo"></img>
-			<br></br>
-			<h2 class="sansserif"> Logg inn </h2>
-			<br></br>
-			<p class="glemtpassord"> Glemt passord? </p>
-			<p class="nybruker"> Ny bruker? </p>
+<div class="boks">
+    <img src="LogginnLogo.png" alt="Logg inn logo" id="LogginnLogo"></img>
+        <br></br>
+            <h2 class="sansserif"> LOGG INN </h2>
+			<p class="glemtpassord"> <a href="#">Glemt passord?</a> </p>
+            <p class="nybruker"> <a href="registrerDeg.html">Ny bruker?</a> </p>
  	<section class="wrap">    
     <form id="simpleform">
     	<div>
-    		<label for="loggInn">Logg inn:</label>
+ 
     		<br></br>
     		<input type="text" name="loggInn" id="loggInn" placeholder="Brukernavn"> </input>
     	</div>
     	<div>
-    		<label for="passord">Passord:</label>
+
     		<br></br>
     		<input type="password" name="passord" id="passord" placeholder="Passord"></input>
     	</div>
