@@ -1,0 +1,184 @@
+body {
+	margin:-3;
+	padding:0;
+	height:99%;
+}
+#wrapper {
+	min-height:25%;
+	position:relative;
+}
+#header {
+	padding:0px;
+	background:#5ac0d7;
+}
+#content {
+	position: fixed;
+	
+	/*padding:0px; */
+	/*padding-bottom:0px;*/   /* Height of the footer element */
+}
+#wfooter {	
+	position: fixed;
+	width: 1923px;
+	bottom: 0px;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.boks{
+	width: 300px;
+	height: 650px;
+	float: center;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	/* border-style: inset; */
+	background-color: #efefef;
+	box-shadow: 10px 10px 5px #ab4940;
+}
+.hjemknapp{
+    width: 150px;
+    height: 60px;
+    left: 1150px;
+    top: 75%;
+    border-radius: 10px;
+    float: right;
+    position: absolute;
+    background: #684878;
+}
+h2.hjem {
+    text-align: center;
+    text-decoration-color: white;
+    font-family: helvetica;
+}
+        
+.cell
+{
+    width: 120px;
+    height:40px;
+    position: relative;
+    color: transparent;
+    line-height: 0px;
+}
+a:visited {
+    background-color: white;
+    text-decoration-color: white
+}
+
+/* Header */
+.headcell
+{
+    width: 100px;
+    height:40px;
+    color: blue;
+    position: relative;
+    line-height: 20px;
+}
+.bottommidh
+{
+    text-align: right;
+}
+.headcell div:before
+{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid; 
+    z-index: -1;
+}
+.topmidh:before
+{ 
+    border-width: 240px 1920px 0 0;
+    border-color: #5ac0d7 transparent transparent transparent;
+}
+.bottommidh:before
+{
+    border-width: 0 0 240px 1925px;
+    border-color: transparent transparent #4aa3b7 transparent;
+    top:0px;
+    left:0px;
+}
+/* Middel */
+.bottommid
+{
+    text-align: right;
+}
+.cell div:before
+{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid; 
+    z-index: -1;
+}
+.topmid:before
+{ 
+	border-right: 1922px #fa6e61;
+	border-bottom: 870px #ff7f70;
+}
+h2.sansserif {
+	position: relative;
+	text-align: center;
+	font-family: Helvetica;
+    font-size: 30px;
+	top: 5%;
+
+}
+h1.Westerdals {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 400%;
+	left: 40%;
+	top: 20%;	
+}
+h2.info {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 125%;
+	left: 40%;
+	top: 67%;	
+}
+h2.info2 {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 125%;
+	left: 40%;
+	top: 77%;	
+}
+p.tilbakeLogIn {
+	position: absolute;
+	text-align: center;
+	font-family: Helvetica;
+	font-size: 110%;
+	top: 9%;
+}
+#actLogo {
+	position: absolute;
+	width: 30%;
+	left: 18%;
+	top: -10%;
+}
+input {
+	border-radius: 10px;
+	padding: 8px 40px;
+
+}
+#submit {
+	background: #64cca7;
+}
+#NyBrukerLogo {
+	position: absolute;
+	top: 14%;
+	left: 40%;
+	height: 38%;
+}
